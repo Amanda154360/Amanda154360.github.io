@@ -1,0 +1,383 @@
+body {
+    background-color: #A8C3A0;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.material-symbols-outlined {
+    size: 10px;
+    color: white;
+    vertical-align: middle;
+    padding-left: 12px;
+}
+
+nav {
+    background-color: #7C9473;
+    padding: 15px;
+    margin: 0px;
+}   
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.titulo {
+    text-align: center;
+    background-color: rgba(87, 115, 73, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.titulo h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    line-height: 1.3;
+}
+
+.imagem-introducao {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.divimagem {
+    flex: 1;
+}
+
+.divimagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.textointroducao {
+    flex: 1;
+}
+
+.textointroducao p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 2px #577349;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #577349;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+}
+
+p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.chakras, .conteudochakra {
+    padding: 10px 0;
+}
+
+.chakras p {
+    text-align: center;
+}
+
+.tabela {
+    overflow-x: auto;
+    margin: 5px 40px;
+    border-radius: 10px;
+    background-color: #96ac89;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+    font-family: "Montserrat", sans-serif;
+}
+
+th, td {
+    padding: 15px 10px;
+    text-align: center;
+    border: 1px solid #7C9473;
+    font-size: 16px;
+}
+
+th {
+    background-color: #577349;
+    font-weight: 600px;
+    font-size: 18px;
+}
+
+tr {
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: #6a8b5a;
+}
+
+.topico {
+    padding: 30px;
+    margin: 15px 0;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border-left: 8px solid transparent;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.topico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.topico p {
+    text-align: left;
+    margin: 0;
+}
+
+.vermelho { 
+    border-left-color: #d36464; 
+}
+.vermelho:hover { 
+    background-color: rgba(211, 100, 100, 0.2); 
+}
+
+.laranja { 
+    border-left-color: #e7a46d; 
+}
+.laranja:hover { 
+    background-color: rgba(231, 164, 109, 0.2);
+}
+
+.amarelo { 
+    border-left-color: #ecea58; 
+}
+.amarelo:hover { 
+    background-color: rgba(235, 233, 78, 0.2); 
+}
+
+.rosa { 
+    border-left-color: #e08fae; 
+}
+.rosa:hover { 
+    background-color: rgba(224, 143, 174, 0.2); 
+}
+
+.azul { 
+    border-left-color: #8fc6e0; 
+}
+.azul:hover { 
+    background-color: rgba(130, 194, 224, 0.2); 
+}
+
+.indigo { 
+    border-left-color: #8686af; 
+}
+.indigo:hover { 
+    background-color: rgba(125, 125, 181, 0.2); 
+}
+
+.violeta { 
+    border-left-color: #B39EB5; 
+}
+.violeta:hover { 
+    background-color: rgba(182, 149, 185, 0.2); 
+}
+
+.fim {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.fim p {
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    color: #577349;
+    margin-bottom: 15px;
+}
+
+.fim a {
+    text-decoration: underline;
+    font-weight: 600;
+    padding: 15px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease; 
+    color: #577349;
+    display: inline-block;
+    text-align: center;
+}
+
+.fim a:hover {
+    text-decoration: underline;
+    font-size: 20px;
+    color: #577349;
+}
+
+/*aq tá a responsividade*/
+@media (max-width: 1024px) {
+    .imagem-introducao {
+        gap: 30px;
+        padding: 30px 20px;
+    }
+    
+    .titulo h1 {
+        font-size: 32px;
+    }
+    
+    h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
+        font-size: 35px;
+    }
+    
+    h4 {
+        font-size: 28px;
+    }
+    
+    .topico {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .imagem-introducao {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+    
+    .titulo {
+        padding: 20px;
+    }
+    
+    .titulo h1 {
+        font-size: 24px;
+    }
+    
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .imagem-introducao {
+        padding: 15px 10px;
+        gap: 15px;
+    }
+    
+    .titulo {
+        padding: 15px;
+    }
+    
+    .titulo h1 {
+        font-size: 20px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h4 {
+        font-size: 22px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    .topico {
+        padding: 15px;
+    }
+    
+    nav {
+        padding: 10px 5px;
+    }
+    
+    nav a {
+        padding: 5px 8px;
+        font-size: 13px;
+    }
+}
+
+@media print {
+    * {
+        background: white;
+        color: black;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    .fim a {
+        display: none;
+    }
+}
