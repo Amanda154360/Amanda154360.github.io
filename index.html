@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style type="text/css">
+      body {
+        margin: 0;
+        background-image: url('imagens/fundoPaisagem.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-x: hidden;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          background-image: url('imagens/fundo.jpg');
+        }
+
+        .myCarrossel{
+          margin-left: auto;
+          margin-right: auto;
+          width: 90%;
+        }
+
+        .album-container {
+          width: 250px;
+          height: 250px;
+        }
+    
+        .album-disco {
+          width: 190px;
+          height: 190px;
+          left: 110px;
+        }
+    
+        .album-capa {
+          height: 220px;
+          max-width: 200px;
+        }
+    }
+
+      .myBg{
+        background-color: #0B1E3F;
+      }
+      .myBgbranco{
+        background-color: #F4EDE2;
+      }
+      .myCarrossel {
+			  margin: 0 auto;
+			  width: 60%;
+        height: 60%;
+      }
+      .myletras{
+        color: #C9A14D;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .mylink{
+        color: #c9b68d;
+      }
+      .mylink:hover{
+        color: #C9A14D;
+        font-weight: bold;
+      }
+
+      .position-relative {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .album-disco {
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        z-index: 1;
+        animation: rodar 4s linear infinite;
+        left: 130px;
+        top: 10%;
+        transform: translateY(-50%);
+      }
+
+      .album-wrapper {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .album-capa {
+        position: relative;
+        height: 250px;
+        width: auto;
+        max-width: 250px;
+        z-index: 2;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-left: 0; 
+      }
+
+      .album-capa:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+
+      .estante img{
+        height: 50%;
+        width: auto;
+      }
+
+
+      @keyframes rodar{
+	      from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+
+</head>
+<body>
+    <nav class="myletras p-2 rounded-3 ">
+        <a id="nav"></a>
+        <mark>Principal</mark> |
+        <a class="mylink" href="album.html">Album</a> |
+        <a class="mylink" href="poema.html">Poema</a>
+    </nav>
+
+
+    <div class="myletras myBg bg-opacity-50 p-3 mt-4 text-center">
+        <h1>Feliz Aniversário, Arthur!</h1>
+        <p>Muitas vezes, celebramos aniversários sem realmente lembrar do motivo de fazer aquilo. E por meio deste
+          site, farei com que entenda a importância para os outros de seu nascimento!<br><br>
+          Feito com muito carinho,<br>
+          Amanda. 
+        </p>
+    </div>
+
+    <div class="myCarrossel myBgbranco mt-3 p-3 rounded-3">
+    <div class="container-fluid p-3 mt-3 text-center">
+    <h2 class="display-4 fw-ligh myletras"> Algumas fotos do gato ♡ </h2>
+    <div class="">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel-indicator-transition">
+          <img src="imagens/img1.jpeg" class="d-block w-100 rounded-3" alt="...">
+        </div>
+        <div class="carousel-item carousel-indicator-transition">
+          <img src="imagens/img3.jpeg" class="d-block w-100 rounded-3" alt="...">
+        </div>
+        <div class="carousel-item carousel-indicator-transition">
+          <img src="imagens/img2.jpeg" class="d-block w-100 rounded-3" alt="...">
+        </div>
+        <div class="carousel-item carousel-indicator-transition">
+          <img src="imagens/img4.jpeg" class="d-block w-100 rounded-3" alt="...">
+        </div>
+        <div class="carousel-item carousel-indicator-transition">
+          <img src="imagens/img5.jpeg" class="d-block w-100 rounded-3" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="myletras myBg bg-opacity-50 p-3 mt-4 text-center">
+        <p>Dia 01 de Janeiro de 2009, é a data em que, por um acaso, o universo permitiu a sua existência.<br>
+        Celebrar essa data é agradecer esse acontecimento raro entre galáxias, e principalmente agradecer o tempo em que você esteve presente na vida das pessoas.<br>
+        Toda vida importa e é única.<br>
+        Você merece todo o carinho, abraços, beijos e reconhecimento, por ser essa pessoa incrível que é. Que está disposto todos os dias a melhorar
+        e nunca desistir de seus sonhos.<br>
+        O seu aniversário é a desculpa para comemorar, mas a razão é você, todos os dias.
+        </p>
+    </div>
+
+    <div class="myletras myBg bg-opacity-50 p-3 mt-4">
+    <h2 class="text-center mb-4">Gostos Musicais</h2>
+    <div class="row justify-content-center g-4">
+        <div class="col-12 col-md-6 col-lg-4 text-center">
+            <div class="d-inline-block position-relative" style="width: 250px; height: 250px;">
+              <a href="https://www.radiohead.com" target="_blank"><img src="imagens/capa1.jpeg" class="album-capa img-fluid rounded shadow"></a>
+              <img src="imagens/disco.png" class="album-disco">
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 text-center">
+            <div class="d-inline-block position-relative" style="width: 250px; height: 250px;">
+                <a href="https://www.cannibal-corpse.com" target="_blank"><img src="imagens/capa2.jpg" class="album-capa img-fluid rounded shadow"></a>
+                <img src="imagens/disco.png" class="album-disco">
+            </div>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-4 text-center">
+            <div class="d-inline-block position-relative" style="width: 250px; height: 250px;">
+              <a href="https://www.gunsnroses.com" target="_blank"><img src="imagens/capa3.jpeg" class="album-capa img-fluid rounded shadow"></a>
+              <img src="imagens/disco.png" class="album-disco">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid myletras myBg bg-opacity-50 p-3 mt-4">
+        <h2 class="text-center mb-4">Sua Estante</h2>
+        <div class="row justify-content-center estante mb-3">
+            <div class="col-sm-12 col-md-4 col-lg-4 ">
+              <img src="imagens/livro1.jpeg" class="img-fluid rounded-3 mb-3">
+              <img src="imagens/livro2.jpeg" class="img-fluid rounded-3 mb-3">
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="imagens/livro3.jpeg" class="img-fluid rounded-3 mb-3">
+              <img src="imagens/livro4.jpeg" class="img-fluid rounded-3 mb-3">
+            </div>
+</div>
+    </div>
+
+    <div class="d-grid gap-2 justify-content-center mb-4">
+      <a class="btn btn-outline-warning btn-sm mt-4" href="#nav" role="button">Voltar</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
