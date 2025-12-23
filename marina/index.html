@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .myNav {
+            background-color: #6fa7ec;
+            color: white;
+        }
+
+        .myDiv {
+            background-color: rgba(199, 199, 199, 0.8);
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .carrosel {
+            width: 556px;
+            height: 600px;
+        }
+
+        .botao {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            border-style: none;
+            border-radius: 10px;
+            background-color: #cfc05f;
+            color: rgb(29, 32, 96);
+            padding: 5px 5px;
+            cursor: pointer;
+        }
+        
+        @media screen and (max-width: 768px) {
+            body {
+                background-image: url(imagens/fundomenor.jpeg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            body {
+                background-image: url(imagens/fundomaior.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            body {
+                background-image: url(imagens/fundomaior.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="myNav p-2">
+        <div class="container-fluid mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                </svg>
+                Home |
+                <a href="sobre.html">Sobre</a> |
+                <a href="album.html">Album</a>
+        </div>
+    </nav>
+
+    <div class="myDiv">
+        <h1>Parabéns Marina!!</h1>
+        <p>Que seu dia seja cheio de alegria e felicidades.<br>
+           Muitas conquistas virão para você ainda, e peço que nunca se deixe abalar pelos momentos ruins
+           que a vida proporciona para a gente. A paciência, a esperança e a resistência são a chave para
+           superar qualquer coisa. E claro, as pessoas importantes para a nossa vida, estando ao nosso lado
+           e nos apoiando quando precisamos!<br><br>
+           Que Deus te abençoe muito, hoje e sempre ♡
+
+           -Amanda, 2026.
+           </p>
+    </div>
+
+    <div class="myDiv mt-4">
+        Neste site, você terá liberdade para navegar e ver fotos e mensagens especiais que preparei para você.
+    </div>
+
+    <div class="myDiv">
+        Aqui algumas fotos suas :D<br><br>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/img10.jpeg" class="carrosel">
+                </div>
+            
+                <div class="carousel-item">
+                    <img src="imagens/img6.jpeg" class="carrosel">
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="imagens/img4.jpeg" class="carrosel">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="botao">Topo</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
