@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.png"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+
+    <style type="text/css">
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('imagens/fundo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            overflow-x: auto;
+            font-family: "Montserrat", sans-serif;
+        }
+
+
+        #formu {
+            background-color: rgb(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 50px;
+            margin: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            align-items: center;
+        }
+
+
+        form {
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+        }
+       
+        label {
+            color: rgb(0, 0, 0);
+        }
+
+
+        input[type="text"], input[type="number"], input[type="email"], input[type="tel"], textarea  {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 0px solid;
+            background-color: #ffffff;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+
+        input:hover, textarea:hover {
+            background-color: rgb(109, 156, 61);
+        }
+
+
+        input:focus, textarea:focus {
+            background-color: rgb(109, 156, 61);
+            border: 0px;
+            color: #ffffff;
+            transform: scale(1.1) translateZ(10px);
+        }
+
+
+        button {
+            color: #323232;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+        #lista{
+            color:rgb(255, 255, 255);
+            background-color: rgb(109, 156, 61);
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        li {
+            list-style-type: disc;
+        }
+
+        nav {
+        background-color: #7C9473;
+        padding: 15px;
+        margin: 0px;
+        }   
+
+        nav a {
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        }
+
+        .material-symbols-outlined {
+        size: 10px;
+        color: white;
+        vertical-align: middle;
+        }
+
+        nav a:hover {
+        text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+
+
+<nav>
+    <a href="index.html"><span class="material-symbols-outlined">home</a></span>
+    <a href="cadastro.html">Cadastro</a>
+    <a href="https://yogateria.com.br/" target="_blank">Equipamentos</a>   
+    <a href="chackra.html">Chakra</a>  
+</nav>
+
+
+<body>
+
+
+    <h1>Para uma melhor experiência com o yoga, <u>cadastre-se!</u></h1>
+
+
+    <h3><i>Você terá acesso a aulas personalizadas e profissionais capacitados para te ajudar numa caminhada mais equilibrada.</i></h3>
+
+
+    <p><i><b>Preencha os campos abaixo:</b></i></p>
+
+
+    <hr>
+
+
+    <div id="formu">
+    <form method="get">
+        <br>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" minlength="3" maxlength="40" required>
+        <br><br>
+
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade" min="8" max="100" required>
+        <br><br>
+
+
+        <label for="sexo">Sexo:</label><br>
+        <input type="radio" id="sexom" name="sexo" value="m">M
+        <input type="radio" id="sexof" name="sexo" value="f">F
+        <br><br>
+
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone">
+        <br><br>
+
+
+        <label for="msg">Mensagem:</label><br>
+        <textarea id="msg" name="msg" minlength="3" maxlength="1000" cols="50" rows="5" placeholder="Informe se você possui alguma incapacitação"></textarea>
+        <br><br>
+
+
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+
+
+    <div id="lista">
+    <h3>Lembre-se!</h3>
+    <small>A yoga pode ser praticada por:</small>
+    <ul>
+        <li>Homens</li>
+        <li>Mulheres</li>
+        <li>Crianças</li>
+        <li>Idosos</li>
+    </ul>
+
+
+    <small>E trás benefios à saúde:</small>
+    <ul>
+        <li>Mental</li>
+        <li>Corporal</li>
+        <li>Espiritual</li>
+    </ul>
+   
+    </div>
+</body>
+</html>

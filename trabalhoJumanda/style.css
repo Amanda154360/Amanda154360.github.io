@@ -1,0 +1,203 @@
+
+body {
+    background-color: #A8C3A0;
+    margin: 0;
+}
+
+nav {
+    background-color: #7C9473;
+    padding: 15px;
+    margin: 10px;
+}
+
+.material-symbols-outlined {
+    size: 10px;
+    color: white;
+    vertical-align: middle;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+}
+
+h4 {
+    text-align: left;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    font-style: italic;
+    color: #7C9473;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+mark {
+    background-color: #957aa3;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.oito-etapas {
+    text-align: center;
+    background-color: #7C9473;
+    border: 1px solid #7C9473;
+    border-radius: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: #577349 10px 10px 0px;
+}
+
+.iniciantes {
+    text-align: center;
+    background-color: #c4c2be ;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 10px;
+}
+
+.iniciantes p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #776b89;
+    text-align: center;
+}
+
+.base {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.solo {
+    text-align: center;
+    margin: 20px auto;
+    width: 85%;
+}
+
+.local {
+    text-align: center;
+    background-color: #7C9473;
+    padding: 10px;
+    margin: 10px auto;
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.curiosidades {
+    text-align: center;
+    border-radius: 10px;
+    border-color: #7C9473;
+    border: 2px;
+    border: solid;
+    display: inline-block;
+}
+
+.local p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.base h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: left;
+    color: white;
+}
+
+.base h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: left;
+    color: #7C9473;
+}
+
+.oito-etapas ol {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    padding-left: 200px;
+}
+
+.oito-etapas li {
+    margin-bottom: 10px;
+}
+
+.oito-etapas p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.oito-etapas h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #394931;
+    text-align: center;
+}
+
+table {
+    width: 300px;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+    height: 400px;
+}
+
+hr {
+    border: 1px solid white;
+    width: 1100px;
+}
+
+

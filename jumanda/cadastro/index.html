@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cadastro</title>
+    <link rel="icon" href="img/cadastro.jpeg">
+</head>
+<body bgcolor="#e6ccef">
+	
+	<h1 style="color: #312b62" align="center">Entre em contato conosco para ter um site só seu!</h1>
+	<h2 style="color: #312b62" align="center">Preencha os campos abaixo</h2>
+	<hr>
+
+	<form method="post">
+		
+
+		<label for="bio">Biografia:</label><br>
+		<textarea id="bio" name="bio" cols="50" rows="5" minlength="20" maxlength="1000" 
+		placeholder="digite uma mensagem de 20 à 1000 caracteres" required></textarea>
+
+		<br><br>
+
+		<label for="nome">Nome:</label><br>
+		<input type="text" name="nome" id="nome" size="50" required minlength="3" maxlength="40" placeholder="Informe seu nome" required>
+
+		<br><br>
+
+		<label for="idade">Idade:</label><br>
+		<input type="number" name="idade" id="idade" min="7" max="100" required>
+
+		<br><br>
+
+		<label for="dataNasc">Data do nascimento:</label><br>
+		<input type="date" name="dataNasc" id="dataNasc" required>
+
+		<br><br>
+
+		<label for="cidade">Cidade:</label><br>
+		<input type="text" name="cidade" id="cidade" size="50" required minlength="3" maxlength="40" spellcheck="true" placeholder="Informe sua cidade" required>
+
+		<br><br>
+
+		<label for="sonho">Sonhos:</label><br>
+		<textarea id="sonho" name="sonho" cols="50" rows="5" minlength="20" maxlength="1000" 
+		placeholder="digite uma mensagem de 20 à 1000 caracteres" required></textarea>
+
+		<br><br>
+
+		<label for="musica">Musica:</label><br>
+		<input type="url" name="musica" id="musica" placeholder="Informe o link" required>
+
+		<br><br>
+
+		<label for="cmdFav">Comida Favorita:</label><br>
+		<textarea id="cmdFav" name="cmdFav" cols="50" rows="5" minlength="20" maxlength="150" 
+		placeholder="digite uma mensagem de 20 à 150 caracteres" required></textarea>
+
+		<br><br>
+
+		<label for="sexo">Sexo:</label> <br>
+		<input type="radio" name="sexo" id="sexo" value="F"> Feminino
+		<input type="radio" name="sexo" id="sexo" value="M"> Masculino
+		<input type="radio" name="sexo" id="sexo" value="M"> Gênero Fluído
+
+		<br><br>
+
+		<label for="foto">Foto:</label><br>
+		<input type="file" name="foto" id="foto">
+
+		<br><br>
+
+		<label for="corFav">Cor Favorita:</label><br>
+		<input type="color" name="corFav" id="corFav" value="#000000">
+
+		<br>
+		<hr>
+		<br>
+
+		<input type="submit" name="btn" value="Cadastrar">
+		<input type="reset" name="btnReset" id="btnReset" value="Limpar">
+		
+
+	</form>
+
+</body>
+</html>
