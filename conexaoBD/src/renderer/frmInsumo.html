@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Insumo</title>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4 bg-light">
+    <h4 class="mb-3 text-primary">Cadastrar Insumo</h4>
+
+    <form id="formInsumo">
+        <div class="mb-3">
+            <label for="tipo" class="form-label">Tipo</label>
+            <select id="tipo" name="tipo" class="form-select" required>
+                <option value="" selected disabled>Selecione...</option>
+                <option value="Impressora">Impressora</option>
+                <option value="Filamento">Filamento</option>
+                <option value="Bico">Bico</option>
+                <option value="Mesa de Impressão">Mesa de Impressão</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control" maxlength="100" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="valor" class="form-label">Valor (R$)</label>
+            <input type="number" id="valor" name="valor" class="form-control" step="0.01" min="0" required>
+        </div>
+
+        <div class="mb-4">
+            <label for="data_aquisicao" class="form-label">Data de Aquisição</label>
+            <input type="date" id="data_aquisicao" name="data_aquisicao" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 fw-bold">Salvar</button>
+    </form>
+
+    <script src="js/frmInsumo.js"></script>
+</body>
+</html>

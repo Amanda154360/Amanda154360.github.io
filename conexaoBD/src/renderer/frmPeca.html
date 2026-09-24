@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Peça Impressa</title>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4 bg-light">
+    <h4 class="mb-3 text-primary">Cadastrar Peça Impressa</h4>
+
+    <form id="formPeca">
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Título</label>
+            <input type="text" id="titulo" name="titulo" class="form-control" maxlength="100" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="cor" class="form-label">Cor</label>
+            <input type="text" id="cor" name="cor" class="form-control" maxlength="50" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="peso" class="form-label">Peso da peça pronta (g)</label>
+            <input type="number" id="peso" name="peso" class="form-control" step="0.01" min="0" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="quantidade_material" class="form-label">Material utilizado (g)</label>
+            <input type="number" id="quantidade_material" name="quantidade_material" class="form-control" step="0.01" min="0" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="tempo_impressao" class="form-label">Tempo de Impressão (min)</label>
+            <input type="number" id="tempo_impressao" name="tempo_impressao" class="form-control" step="1" min="0" required>
+        </div>
+
+        <div class="mb-4">
+            <label for="data_impressao" class="form-label">Data de Impressão</label>
+            <input type="date" id="data_impressao" name="data_impressao" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 fw-bold">Salvar</button>
+    </form>
+
+    <script src="js/frmPeca.js"></script>
+</body>
+</html>

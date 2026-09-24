@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Controle</title>
+    <!-- Importação do Bootstrap Offline -->
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!-- TRAVANDO A JANELA: overflow-hidden e fundo cinza claro -->
+
+<body class="overflow-hidden bg-light">
+
+
+    <!-- d-flex (flexbox) e vh-100 (altura total) -->
+    <div class="container-fluid vh-100 d-flex p-0">
+        <!-- 1. MENU LATERAL (Com largura fixa) -->
+        <div class="bg-dark text-white p-3 d-flex flex-column shadow z-2" style="width: 250px;">
+
+
+            <h3 class="text-success fw-bold mb-0">3D Print</h3>
+            <hr>
+        </div>
+
+        <!-- CONTAINER DA DIREITA: flex-grow-1 (pega o resto) -->
+        <div class="flex-grow-1 d-flex flex-column bg-light">
+
+            <!-- HEADER (Topbar) -->
+            <header class="bg-white border-bottom p-3 d-flex justify-content-between align-items-center shadow-sm z-1">
+                <h4 class="m-0 text-secondary">Painel de Controle</h4>
+                <span class="badge bg-secondary p-2">Admin</span>
+            </header>
+
+            <!-- 3. ÁREA DE CONTEÚDO (MAIN): overflow-auto (PERMITE ROLAR AQUI!) -->
+            <main class="flex-grow-1 overflow-auto p-4">
+
+                <h3 class="mb-4">Bem-vindo!</h3>
+                <p class="text-muted">Use o menu "Cadastros" para registrar Insumos ou Peças Impressas.</p>
+                
+                
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Nome</th>
+                            <th>Valor</th>
+                            <th>Data de Aquisição</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyInsumos"></tbody>
+                </table>
+
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Titulo</th>
+                            <th>Cor</th>
+                            <th>Peso</th>
+                            <th>Quantidade de Material</th>
+                            <th>Tempo de Impressão</th>
+                            <th>Data da Impressão</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyPeca"></tbody>
+                </table>
+
+            </main>
+
+        </div> <!-- Fim container direita -->
+
+    </div>
+
+
+    <div class="modal fade" id="modalConfirmarExclusao" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirmar exclusão</h5>
+      </div>
+      <div class="modal-body">
+        <p>
+          Tem certeza que deseja excluir o insumo
+          <strong id="nomeInsumoExcluir"></strong>?
+          <br>
+          Essa ação não pode ser desfeita.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          Cancelar
+        </button>
+        <button class="btn btn-danger" id="btnConfirmarExclusao">
+          Excluir
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="modal fade" id="modalConfirmarExclusaoPeca" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirmar exclusão</h5>
+      </div>
+      <div class="modal-body">
+        <p>
+          Tem certeza que deseja excluir a peca
+          <strong id="tituloPecaExcluir"></strong>?
+          <br>
+          Essa ação não pode ser desfeita.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">
+          Cancelar
+        </button>
+        <button class="btn btn-danger" id="btnConfirmarExclusaoPeca">
+          Excluir
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="js/frmPrincipal.js"></script>
+</body>
+
+</html>
